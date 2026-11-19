@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light" />
     <meta name="description" content="Ofertas conferidas todo dia nos canais Caça Promoções + os vídeos do Como Funciona — tudo num lugar só." />
-    <link rel="icon" href="data:," />
+    <link rel="icon" type="image/jpeg" href="foto-perfil.jpg" />
+    <link rel="apple-touch-icon" href="foto-perfil.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Caça Promoções × Como Funciona — tudo num lugar só" />
+    <meta property="og:description" content="Ofertas conferidas todo dia + os vídeos do Como Funciona — canais, lojas e a oferta em destaque." />
+    <meta property="og:url" content="https://achadododia59.github.io" />
+    <meta property="og:image" content="https://achadododia59.github.io/foto-perfil.jpg" />
+    <meta name="twitter:card" content="summary" />
     <title>Links — Caça Promoções + Como Funciona</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -163,6 +170,27 @@
       .btn-light:hover { transform: translate(-1px,-1px); box-shadow: 5px 5px 0 var(--black); }
       .btn-light:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 var(--black); }
 
+
+      /* ---------- Destaque ---------- */
+      .destaque-card {
+        background: var(--black);
+        border-radius: 18px;
+        padding: 20px;
+        box-shadow: 5px 5px 0 rgba(0,0,0,.28);
+      }
+      .destaque-prod { margin: 0 0 6px; font-size: 1.25rem; font-weight: 900; color: var(--yellow); line-height: 1.25; }
+      .destaque-preco { margin: 0 0 2px; font-size: 1.55rem; font-weight: 900; color: var(--white); }
+      .destaque-info { margin: 0 0 6px; font-size: .92rem; line-height: 1.5; color: #EDEDE6; }
+      .destaque-carimbo { margin: 0 0 14px; font-size: .78rem; font-weight: 600; color: #CFCFAF; }
+
+      /* ---------- Compartilhar ---------- */
+      .btn-share { background: #25D366; color: #0B3D1E; box-shadow: 4px 4px 0 var(--black); }
+      .btn-share .icon { background: var(--black); color: #25D366; border: 2px solid var(--black); }
+      .btn-share .s { color: #14532D; }
+      .btn-share .arrow { color: #0B3D1E; }
+      .btn-share:hover { transform: translate(-1px,-1px); box-shadow: 5px 5px 0 var(--black); }
+      .btn-share:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 var(--black); }
+
       /* ---------- Footer ---------- */
       footer {
         margin-top: 36px;
@@ -210,6 +238,24 @@
         <h1>Caça Promoções</h1>
         <p class="tagline">Ofertas conferidas todo dia + os vídeos do <strong>Como Funciona</strong> — tudo num lugar só.</p>
       </header>
+
+      <!-- DESTAQUE-INICIO: as rodadas das 09:30/16:30 substituem TODO o miolo entre DESTAQUE-INICIO e DESTAQUE-FIM pela oferta em destaque reconferida (produto, preço, loja, carimbo de conferência e link). -->
+      <section aria-labelledby="sec-destaque">
+        <h2 id="sec-destaque">🔥 Oferta em destaque</h2>
+        <div class="destaque-card">
+          <p class="destaque-prod">Robô Aspirador Xiaomi S40C</p>
+          <p class="destaque-info">É a oferta-âncora do vídeo de hoje (nº 19, Robô aspirador), no ar às 18:00. O preço entra aqui reconferido na rodada da tarde.</p>
+          <p class="destaque-carimbo">Conferência de preço na rodada das 16:30 de hoje.</p>
+          <a data-goatcounter-click="destaque-oferta" class="btn btn-primary" href="https://s.shopee.com.br/9zzLtYSelZ" target="_blank" rel="noopener noreferrer" aria-label="Ver o Robô Aspirador Xiaomi S40C na Shopee (abre em nova aba)">
+            <span class="txt">
+              <span class="t">Ver na Shopee</span>
+              <span class="s">Link de afiliado</span>
+            </span>
+            <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+          </a>
+        </div>
+      </section>
+      <!-- DESTAQUE-FIM -->
 
       <section aria-labelledby="sec-ofertas">
         <h2 id="sec-ofertas">🔎 Ofertas todo dia <span class="hint">Entre nos canais</span></h2>
@@ -313,6 +359,20 @@
             <span class="arrow" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
             </span>
+          </a>
+        </div>
+      </section>
+
+
+      <section aria-labelledby="sec-compartilhar">
+        <h2 id="sec-compartilhar">📲 Achou útil? <span class="hint">Manda pra um amigo</span></h2>
+        <div class="links">
+          <a data-goatcounter-click="compartilhar-whatsapp" class="btn btn-share" href="https://wa.me/?text=%F0%9F%94%8E%20Ca%C3%A7a%20Promo%C3%A7%C3%B5es%20%E2%80%94%20ofertas%20conferidas%20todo%20dia%20%2B%20os%20v%C3%ADdeos%20do%20Como%20Funciona%2C%20tudo%20num%20lugar%20s%C3%B3%3A%20https%3A//achadododia59.github.io" target="_blank" rel="noopener noreferrer" aria-label="Compartilhar esta página no WhatsApp (abre em nova aba)">
+            <span class="txt">
+              <span class="t">Compartilhar no WhatsApp</span>
+              <span class="s">Manda o link pra quem adora uma oferta</span>
+            </span>
+            <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
           </a>
         </div>
       </section>
